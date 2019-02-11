@@ -4,7 +4,10 @@
     <hr>
     <ul class="list-group">
       <li class="list-group-item">
-        <button class=""></button>
+        <button class="btn btn-outline-info"
+        *ngFor="let ingredient of ingredients">
+          {{ingredient.name}} ({{ingredient.amount}})
+        </button>
       </li>
     </ul>
   </div>
